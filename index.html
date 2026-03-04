@@ -1,363 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Your Next Bed | Pay Weekly Beds & Sealy Mattresses in Northern England</title>
-  <meta name="description" content="Your Next Bed brings cosy, affordable beds, Sealy mattresses, Silentnight mattresses and sofas to Northern England. Pay weekly beds with Klarna, warm Northern service and sharp, memorable copy." />
+  <title>YourNextBed.com | Pay Weekly Beds & Mattresses in the North</title>
+  <meta name="description" content="Proper Northern beds, cosy UK bedrooms, and pay-weekly options. Delivered across Manchester, Leeds, Bolton, Newcastle & Yorkshire. No nonsense, no daft markups." />
 
-  <!-- Tailwind CSS CDN -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            display: ['Inter', 'system-ui', 'ui-sans-serif', 'sans-serif'],
-            body: ['Inter', 'system-ui', 'ui-sans-serif', 'sans-serif']
+            display: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
           },
           colors: {
             brand: {
-              50: '#fff7f2',
-              100: '#ffecdd',
-              200: '#ffd3b0',
-              300: '#ffb47d',
-              400: '#ff8f47',
-              500: '#f26a21',
-              600: '#d45218',
-              700: '#aa3f14',
-              800: '#7a2c0f',
-              900: '#4b1908'
+              50: '#fff4ec',
+              100: '#ffe2cf',
+              200: '#ffbf99',
+              300: '#ff995f',
+              400: '#f26a21',
+              500: '#d45518',
+              600: '#aa4214',
+              700: '#7a2d0f',
+              800: '#4b1908',
+              900: '#2a0d04'
             },
             cream: '#fdf6ec',
-            sage: '#c7d8c3',
-            ink: '#1f2933'
+            ink: '#111827'
           }
         }
       }
     }
   </script>
 
-  <!-- Simple Local Business schema (kept lean) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Store",
-    "name": "Your Next Bed",
-    "url": "https://yournextbed.co.uk",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Manchester",
-      "addressCountry": "GB"
-    },
-    "areaServed": ["Manchester","Leeds","Bolton","Newcastle","North West England","Yorkshire"],
-    "priceRange": "££",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "187"
-    }
-  }
-  </script>
-
-  <!-- Inter font -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body class="bg-cream text-ink font-body antialiased">
-  <div class="min-h-screen flex flex-col">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Header -->
-    <header class="border-b border-orange-100 bg-white/90 backdrop-blur">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <!-- Northern badge with subtle cross -->
-          <div class="relative flex items-center justify-center w-9 h-9 rounded-full border border-brand-400 bg-cream shadow-sm overflow-hidden">
-            <span class="absolute inset-[5px] border border-brand-200 rounded-full"></span>
-            <span class="absolute inset-[11px] bg-brand-500/95">
-              <span class="absolute inset-y-0 left-1/2 w-[2px] -translate-x-1/2 bg-white/95"></span>
-              <span class="absolute inset-x-0 top-1/2 h-[2px] -translate-y-1/2 bg-white/95"></span>
-            </span>
-            <span class="relative text-[9px] font-semibold tracking-tight text-white">NORTH</span>
-          </div>
-          <div class="leading-tight">
-            <div class="font-semibold tracking-tight text-sm sm:text-base">Your Next Bed</div>
-            <div class="text-[11px] text-slate-500">Beds that suit your life, not a showroom.</div>
-          </div>
-        </div>
-        <nav class="hidden md:flex items-center gap-5 text-xs text-slate-600">
-          <a href="#products" class="hover:text-brand-600">Beds</a>
-          <a href="#mattresses" class="hover:text-brand-600">Sealy & Silentnight</a>
-          <a href="#klarna" class="hover:text-brand-600">Klarna</a>
-          <a href="#reviews" class="hover:text-brand-600">Local reviews</a>
-        </nav>
-        <a href="#cta" class="inline-flex items-center rounded-full bg-brand-500 px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-brand-400 transition">
+  <style>
+    .logo-ynb { letter-spacing: -0.04em; }
+    .logo-your {
+      background: linear-gradient(90deg, #f29b5a, #e06a2a);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .logo-next {
+      background: linear-gradient(90deg, #e06a2a, #b3471b);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .logo-bed {
+      background: linear-gradient(90deg, #b3471b, #5a2a16);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .logo-com { color: #111827; opacity: 0.9; }
+  </style>
+</head>
+
+<body class="bg-cream text-ink font-body antialiased">
+
+<!-- HEADER -->
+<header class="bg-white/90 backdrop-blur border-b border-brand-100 sticky top-0 z-50 shadow">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+    <h1 class="logo-ynb text-2xl sm:text-3xl font-extrabold select-none">
+      <span class="logo-your">Your</span><span class="logo-next">Next</span><span class="logo-bed">Bed</span><span class="logo-com">.com</span>
+    </h1>
+
+    <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+      <a href="#products" class="hover:text-brand-500">Beds</a>
+      <a href="#mattresses" class="hover:text-brand-500">Mattresses</a>
+      <a href="#klarna" class="hover:text-brand-500">Pay Weekly</a>
+      <a href="#reviews" class="hover:text-brand-500">Reviews</a>
+    </nav>
+
+    <a href="#products" class="rounded-full bg-brand-500 px-5 py-2 text-sm font-semibold text-white shadow hover:bg-brand-400">
+      Shop now
+    </a>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="relative overflow-hidden bg-ink text-cream">
+  <div class="absolute inset-0">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,_#111827,_#020617)] opacity-90"></div>
+    <div class="absolute inset-0 mix-blend-soft-light opacity-45"
+      style="background-image:url('https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600'); background-size:cover; background-position:center;">
+    </div>
+  </div>
+
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 pt-20 pb-24 grid lg:grid-cols-[1.2fr,1fr] gap-10 lg:gap-14 items-start">
+    <div>
+      <div class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1 text-[11px] text-cream/80 mb-4 border border-white/10 uppercase tracking-[0.18em]">
+        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400"></span>
+        Manchester • Leeds • Bolton • Newcastle
+      </div>
+
+      <h2 class="text-4xl sm:text-5xl lg:text-[3.1rem] font-extrabold mb-4 leading-tight">
+        Proper beds for<br class="hidden sm:block" />
+        <span class="relative inline-block">
+          proper Northern nights
+          <span class="absolute -bottom-1 left-0 right-0 h-[3px] bg-brand-400 rounded-full"></span>
+        </span>.
+      </h2>
+
+      <p class="text-lg text-cream/80 mb-6 max-w-xl">
+        Cosy UK bedrooms, Sealy‑style comfort, and pay‑weekly options that don’t take the mick. Delivered by people who actually turn up. No nonsense, no daft markups — just sleep that feels earned.
+      </p>
+
+      <ul class="space-y-3 text-cream/90 text-sm sm:text-base mb-8">
+        <li class="flex gap-2"><span class="mt-1 text-brand-300">✓</span> Pay‑weekly beds with clear weekly prices.</li>
+        <li class="flex gap-2"><span class="mt-1 text-brand-300">✓</span> Mattresses chosen for real UK bedrooms.</li>
+        <li class="flex gap-2"><span class="mt-1 text-brand-300">✓</span> Northern straight‑talk. We tell you the price, the day, and then we turn up.</li>
+      </ul>
+
+      <div class="flex flex-col sm:flex-row gap-4">
+        <a href="#products" class="rounded-full bg-brand-500 px-7 py-3 text-sm font-semibold text-white shadow-xl hover:bg-brand-400">
           Find your next bed
         </a>
+        <a href="#klarna" class="rounded-full border border-cream/30 px-6 py-3 text-sm font-medium text-cream bg-white/5 hover:bg-white/10">
+          How pay‑weekly works
+        </a>
       </div>
-    </header>
+    </div>
 
-    <!-- Main -->
-    <main class="flex-1">
-      <!-- Hero with wavy background -->
-      <section class="relative overflow-hidden">
-        <!-- Wavy SVG background -->
-        <div class="absolute inset-x-0 -top-24 h-64 pointer-events-none">
-          <svg class="w-full h-full" viewBox="0 0 1440 320" preserveAspectRatio="none">
-            <path fill="#ffecdd" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,149.3C384,171,480,181,576,176C672,171,768,149,864,133.3C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-          </svg>
-        </div>
-
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-12 sm:pt-14 sm:pb-16 lg:pt-16 lg:pb-20 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center relative">
-          <!-- Copy -->
-          <div>
-            <div class="inline-flex items-center gap-2 rounded-full bg-sage/40 px-3 py-1 text-[11px] text-slate-700 mb-4 border border-sage">
-              <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-              <span>Manchester • Leeds • Bolton • Newcastle • North West & Yorkshire</span>
-            </div>
-            <h1 class="font-display text-3xl sm:text-4xl lg:text-[2.7rem] font-semibold tracking-tight text-ink mb-3">
-              Beds so comfy you’ll ignore  <span class="underline decoration-brand-400 decoration-2 underline-offset-4">the alarm</span>.
-            </h1>
-            <p class="text-sm sm:text-base text-slate-700 mb-4 max-w-xl">
-              Your Next Bed brings warm, real‑home beds and Sealy & Silentnight mattresses to Northern bedrooms.
-              Pay weekly beds with Klarna, sharp pricing, and a tone of voice that doesn’t talk to you like a brochure.
-            </p>
-            <ul class="space-y-2 text-sm text-slate-800 mb-5">
-              <li class="flex items-start gap-2">
-                <span class="mt-1 h-4 w-4 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-[10px]">✓</span>
-                <span><strong class="font-semibold">Pay weekly beds</strong> that fit round your pay cycle, not your overdraft.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="mt-1 h-4 w-4 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-[10px]">✓</span>
-                <span><strong class="font-semibold">Sealy & Silentnight mattresses</strong> chosen for actual backs, not glossy catalogues.</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <span class="mt-1 h-4 w-4 rounded-full bg-brand-100 text-brand-600 flex items-center justify-center text-[10px]">✓</span>
-                <span><strong class="font-semibold">Northern straight‑talk:</strong> no waffle, no daft jargon, no “limited time only” drama.</span>
-              </li>
-            </ul>
-            <div class="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-              <a id="cta" href="#products" class="inline-flex items-center justify-center rounded-full bg-brand-500 px-5 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-brand-400 transition">
-                Browse beds & mattresses
-              </a>
-              <button class="inline-flex items-center justify-center rounded-full border border-slate-300 px-4 py-2 text-xs sm:text-sm font-medium text-ink bg-white hover:border-brand-300 transition">
-                See Klarna examples
-              </button>
-              <div class="flex items-center gap-2 text-[11px] text-slate-600">
-                <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
-                <span>4.9★ from Northern households</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Visual: tilted card stack with real beds/mattresses -->
-          <div class="lg:pl-4">
-            <div class="relative">
-              <!-- Back blob -->
-              <div class="absolute -top-6 -right-6 w-40 h-40 bg-brand-100 rounded-full blur-2xl opacity-70"></div>
-
-              <div class="relative">
-                <!-- Card 1 -->
-                <div class="rounded-3xl bg-white border border-orange-100 shadow-[0_18px_45px_rgba(0,0,0,0.08)] overflow-hidden transform -rotate-2 origin-bottom-left mb-4">
-                  <div class="relative aspect-[4/3]">
-                    <img
-                      src="https://images.pexels.com/photos/6585763/pexels-photo-6585763.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                      alt="Cosy bedroom with double bed and mattress"
-                      class="w-full h-full object-cover"
-                    />
-                    <div class="absolute left-4 bottom-4 rounded-2xl bg-white/92 px-3 py-2 shadow-sm border border-orange-100">
-                      <p class="text-[11px] text-slate-500">Best‑seller</p>
-                      <p class="text-sm font-semibold text-ink">“Red Brick Retreat” Sealy set</p>
-                      <p class="text-[11px] text-slate-500">From £12/week with Klarna</p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Card 2 (slightly offset) -->
-                <div class="rounded-3xl bg-white border border-orange-100 shadow-[0_18px_45px_rgba(0,0,0,0.06)] overflow-hidden transform rotate-2 origin-top-right max-w-sm ml-auto -mt-6">
-                  <div class="relative aspect-[4/3]">
-                    <img
-                      src="https://images.pexels.com/photos/6585761/pexels-photo-6585761.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                      alt="Bright bedroom with upholstered bed and mattress"
-                      class="w-full h-full object-cover"
-                    />
-                    <div class="absolute right-3 top-3 rounded-full bg-cream/95 px-3 py-1 text-[11px] font-semibold text-brand-600 shadow-sm">
-                      Built for lie‑ins
-                    </div>
-                  </div>
-                </div>
-
-                <!-- Floating stat -->
-                <div class="absolute -bottom-4 left-4 rounded-2xl bg-ink text-cream px-4 py-3 text-[11px] shadow-lg">
-                  <p class="font-semibold text-sm">“Feels like a hotel bed, but I can still afford a takeaway.”</p>
-                  <p class="text-[10px] text-cream/80 mt-1">– Actual review from a lad in Bolton</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Trust strip -->
-      <section class="bg-white border-y border-orange-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 grid sm:grid-cols-4 gap-4 text-xs sm:text-sm">
-          <div class="flex items-center gap-3">
-            <div class="h-8 w-8 rounded-full bg-brand-50 flex items-center justify-center text-brand-500 text-lg">🛏</div>
-            <div>
-              <p class="font-semibold text-ink">Pay weekly beds</p>
-              <p class="text-[11px] text-slate-600">Spread the cost with Klarna.</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="h-8 w-8 rounded-full bg-sage/60 flex items-center justify-center text-emerald-700 text-lg">✅</div>
-            <div>
-              <p class="font-semibold text-ink">No daft surprises</p>
-              <p class="text-[11px] text-slate-600">You see the numbers before you say yes.</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="h-8 w-8 rounded-full bg-orange-100 flex items-center justify-center text-brand-600 text-lg">🌙</div>
-            <div>
-              <p class="font-semibold text-ink">Sealy & Silentnight</p>
-              <p class="text-[11px] text-slate-600">Proper support, proper kip.</p>
-            </div>
-          </div>
-          <div class="flex items-center gap-3">
-            <div class="h-8 w-8 rounded-full bg-slate-100 flex items-center justify-center text-slate-700 text-lg">🏠</div>
-            <div>
-              <p class="font-semibold text-ink">Proudly Northern</p>
-              <p class="text-[11px] text-slate-600">Real people, real homes.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Beds -->
-      <section id="products" class="bg-cream/70">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-14">
-          <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8">
-            <div>
-              <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight text-ink mb-2">
-                Beds built for Northern nights, not showroom lighting.
-              </h2>
-              <p class="text-sm text-slate-700 max-w-xl">
-                Pay weekly beds that look right in a red‑brick terrace, a semi, or a new build — and feel right when you
-                finally get your shoes off.
-              </p>
-            </div>
-            <div class="text-xs text-slate-600">
-              <p class="font-semibold text-ink mb-1">Popular searches:</p>
-              <p>pay weekly beds • beds Manchester • affordable beds North West</p>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-3 gap-6">
-            <!-- Card 1 -->
-            <article class="rounded-3xl bg-white border border-orange-100 shadow-sm overflow-hidden flex flex-col transform -rotate-1 hover:rotate-0 transition">
-              <div class="relative aspect-[4/3]">
-                <img
-                  src="https://images.pexels.com/photos/6585760/pexels-photo-6585760.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Double bed with mattress in bright bedroom"
-                  class="w-full h-full object-cover"
-                />
-                <span class="absolute top-3 left-3 rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold text-brand-600 shadow-sm">
-                  Everyday favourite
-                </span>
-              </div>
-              <div class="p-4 flex-1 flex flex-col">
-                <h3 class="font-semibold text-ink mb-1">The Red Brick Classic</h3>
-                <p class="text-xs text-slate-700 mb-3">
-                  A sturdy frame with a Silentnight mattress — ideal for terraces and “just one more episode” nights.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-3 border-t border-orange-100">
-                  <div>
-                    <p class="text-[11px] text-slate-500">From</p>
-                    <p class="text-lg font-semibold text-ink">£10<span class="text-xs text-slate-600">/week</span></p>
-                    <p class="text-[11px] text-slate-500">with Klarna</p>
-                  </div>
-                  <button class="text-xs font-semibold rounded-full bg-brand-500 px-3 py-1.5 text-white hover:bg-brand-400 transition">
-                    View details
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Card 2 -->
-            <article class="rounded-3xl bg-white border border-orange-100 shadow-sm overflow-hidden flex flex-col transform rotate-1 hover:rotate-0 transition">
-              <div class="relative aspect-[4/3]">
-                <img
-                  src="https://images.pexels.com/photos/6585762/pexels-photo-6585762.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Modern bed with Sealy mattress"
-                  class="w-full h-full object-cover"
-                />
-                <span class="absolute top-3 left-3 rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold text-brand-600 shadow-sm">
-                  Northern favourite
-                </span>
-              </div>
-              <div class="p-4 flex-1 flex flex-col">
-                <h3 class="font-semibold text-ink mb-1">Sealy Sleepwell</h3>
-                <p class="text-xs text-slate-700 mb-3">
-                  Premium support mattress and frame. Perfect for folks who take their lie-ins seriously.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-3 border-t border-orange-100">
-                  <div>
-                    <p class="text-[11px] text-slate-500">From</p>
-                    <p class="text-lg font-semibold text-ink">£12<span class="text-xs text-slate-600">/week</span></p>
-                    <p class="text-[11px] text-slate-500">with Klarna</p>
-                  </div>
-                  <button class="text-xs font-semibold rounded-full bg-brand-500 px-3 py-1.5 text-white hover:bg-brand-400 transition">
-                    View details
-                  </button>
-                </div>
-              </div>
-            </article>
-
-            <!-- Card 3 -->
-            <article class="rounded-3xl bg-white border border-orange-100 shadow-sm overflow-hidden flex flex-col transform -rotate-2 hover:rotate-0 transition">
-              <div class="relative aspect-[4/3]">
-                <img
-                  src="https://images.pexels.com/photos/6585764/pexels-photo-6585764.jpeg?auto=compress&cs=tinysrgb&w=1200"
-                  alt="Cosy bedroom with mattress and bedding"
-                  class="w-full h-full object-cover"
-                />
-                <span class="absolute top-3 left-3 rounded-full bg-white/92 px-3 py-1 text-[11px] font-semibold text-brand-600 shadow-sm">
-                  Local favourite
-                </span>
-              </div>
-              <div class="p-4 flex-1 flex flex-col">
-                <h3 class="font-semibold text-ink mb-1">Silentnight Snooze</h3>
-                <p class="text-xs text-slate-700 mb-3">
-                  Classic comfort mattress, ideal for North West nights and lazy Sunday mornings.
-                </p>
-                <div class="mt-auto flex items-center justify-between pt-3 border-t border-orange-100">
-                  <div>
-                    <p class="text-[11px] text-slate-500">From</p>
-                    <p class="text-lg font-semibold text-ink">£11<span class="text-xs text-slate-600">/week</span></p>
-                    <p class="text-[11px] text-slate-500">with Klarna</p>
-                  </div>
-                  <button class="text-xs font-semibold rounded-full bg-brand-500 px-3 py-1.5 text-white hover:bg-brand-400 transition">
-                    View details
-                  </button>
-                </div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <!-- Additional sections (mattresses, Klarna, reviews) go here exactly as in original code with all details intact -->
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-white border-t border-orange-100 mt-10">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-600">
-        <p>&copy; 2026 YourNextBed.com Ltd. All rights reserved.</p>
-        <p>Manchester • Leeds • Bolton • Newcastle • North West England & Yorkshire</p>
+    <div class="relative">
+      <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/10 transform -rotate-3 hover:rotate-0 transition duration-500">
+        <img src="https://images.pexels.com/photos/164595/pexels-photo-164595.jpeg?auto=compress&cs=tinysrgb&w=1600"
+             alt="Cosy UK bedroom with warm lighting and double bed" class="w-full h-72 object-cover">
       </div>
-    </footer>
+
+      <div class="absolute -bottom-6 left-4 bg-brand-500 text-cream px-4 py-3 rounded-xl shadow-xl text-[11px] uppercase tracking-[0.18em] flex items-center gap-2">
+        <span class="h-1.5 w-1.5 rounded-full bg-cream"></span>
+        Proper beds. Proper prices.
+      </div>
+
+      <div class="absolute -top-6 right-0 bg-white/10 border border-white/20 rounded-2xl px-4 py-3 shadow-lg backdrop-blur-sm max-w-[220px] transform rotate-2">
+        <p class="text-[11px] text-cream/70 uppercase tracking-[0.16em] mb-1">Actual customer</p>
+        <p class="text-sm font-semibold text-cream">
+          “Feels like a hotel bed, but I can still afford a takeaway.”
+        </p>
+        <p class="text-[11px] text-cream/60 mt-1">Lad from Bolton, pay‑weekly divan & mattress</p>
+      </div>
+    </div>
   </div>
+
+  <!-- Wavy divider bottom -->
+  <div class="absolute bottom-0 left-0 right-0 translate-y-full">
+    <svg viewBox="0 0 1440 120" class="w-full h-16 sm:h-20" preserveAspectRatio="none">
+      <path fill="#fdf6ec" d="M0,64L60,69.3C120,75,240,85,360,80C480,75,600,53,720,48C840,43,960,53,1080,69.3C1200,85,1320,107,1380,117.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<section class="bg-cream pt-10 pb-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 grid grid-cols-2 sm:grid-cols-4 gap-6 text-center text-sm font-medium text-slate-700">
+    <div class="transform -translate-y-1">✔ Trusted Northern retailer</div>
+    <div class="transform translate-y-1">✔ Sealy‑style comfort ranges</div>
+    <div class="transform -translate-y-1">✔ Klarna pay‑weekly options</div>
+    <div class="transform translate-y-1">✔ 5,000+ deliveries across the North</div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="py-14">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-baseline justify-between gap-4 mb-6">
+      <h3 class="text-3xl font-bold">Beds & Divans</h3>
+      <span class="text-xs uppercase tracking-[0.18em] text-brand-600">Best sellers</span>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Card 1 -->
+      <article class="bg-white rounded-2xl shadow border border-brand-100 overflow-hidden transform -rotate-1">
+        <img src="https://images.pexels.com/photos/6585761/pexels-photo-6585761.jpeg?auto=compress&cs=tinysrgb&w=1600"
+             alt="Classic divan bed in a cosy UK bedroom" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h4 class="font-semibold text-lg mb-1">Classic Divan Bed</h4>
+          <p class="text-sm text-slate-600 mb-3">Sturdy, comfy, built for real UK bedrooms.</p>
+          <p class="font-bold text-brand-600 mb-2">From £10/week</p>
+          <p class="text-xs text-slate-500 mb-3">Example over 36 weeks. Klarna pay‑weekly available.</p>
+          <a href="#klarna" class="text-brand-500 font-medium text-sm">See pay‑weekly examples →</a>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article id="mattresses" class="bg-white rounded-2xl shadow border border-brand-100 overflow-hidden transform translate-y-3 rotate-1">
+        <img src="https://images.pexels.com/photos/1248582/pexels-photo-1248582.jpeg?auto=compress&cs=tinysrgb&w=1600"
+             alt="Comfort mattress on a double bed in a UK bedroom" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h4 class="font-semibold text-lg mb-1">Comfort Support Mattress</h4>
+          <p class="text-sm text-slate-600 mb-3">Sealy‑style support, great for side sleepers.</p>
+          <p class="font-bold text-brand-600 mb-2">From £12/week</p>
+          <p class="text-xs text-slate-500 mb-3">Example over 36 weeks. Klarna pay‑weekly available.</p>
+          <a href="#klarna" class="text-brand-500 font-medium text-sm">See pay‑weekly examples →</a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="bg-white rounded-2xl shadow border border-brand-100 overflow-hidden transform -translate-y-2 -rotate-2">
+        <img src="https://images.pexels.com/photos/6585763/pexels-photo-6585763.jpeg?auto=compress&cs=tinysrgb&w=1600"
+             alt="Ottoman storage bed in a cosy UK bedroom" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h4 class="font-semibold text-lg mb-1">Ottoman Storage Bed</h4>
+          <p class="text-sm text-slate-600 mb-3">Extra storage for small Northern bedrooms.</p>
+          <p class="font-bold text-brand-600 mb-2">From £14/week</p>
+          <p class="text-xs text-slate-500 mb-3">Example over 36 weeks. Klarna pay‑weekly available.</p>
+          <a href="#klarna" class="text-brand-500 font-medium text-sm">See pay‑weekly examples →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Wavy divider -->
+<section aria-hidden="true">
+  <svg viewBox="0 0 1440 120" class="w-full h-16 sm:h-20" preserveAspectRatio="none">
+    <path fill="#fff4ec" d="M0,96L60,85.3C120,75,240,53,360,48C480,43,600,53,720,64C840,75,960,85,1080,85.3C1200,85,1320,75,1380,69.3L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+  </svg>
+</section>
+
+<!-- KLARNA -->
+<section id="klarna" class="bg-brand-50 border-y border-brand-100 py-14">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <div class="flex items-baseline justify-between gap-4 mb-6">
+      <h3 class="text-3xl font-bold">Pay‑weekly made simple</h3>
+      <span class="text-xs uppercase tracking-[0.18em] text-brand-600">No nonsense</span>
+    </div>
+
+    <p class="text-slate-700 mb-8 max-w-2xl">
+      No jargon. No “too good to be true” small print. Just clear weekly examples so you know exactly what you're paying.
+    </p>
+
+    <div class="grid sm:grid-cols-3 gap-8">
+
+      <div class="bg-white rounded-xl shadow p-6 border border-brand-100 relative">
+        <h4 class="font-semibold mb-2">£299 bed</h4>
+        <p class="text-brand-600 font-bold text-2xl mb-1 relative inline-block">
+          £10/week
+          <span class="absolute -inset-1 -z-10 rounded-full border border-brand-200"></span>
+        </p>
+        <p class="text-sm text-slate-600 mb-1">Example over 36 weeks.</p>
+        <p class="text-xs text-slate-500">Subject to status. Klarna terms apply.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 border border-brand-100 transform translate-y-3">
+        <h4 class="font-semibold mb-2">£399 mattress</h4>
+        <p class="text-brand-600 font-bold text-2xl mb-1">£13/week</p>
+        <p class="text-sm text-slate-600 mb-1">Example over 36 weeks.</p>
+        <p class="text-xs text-slate-500">Subject to status. Klarna terms apply.</p>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-6 border border-brand-100 transform -translate-y-2">
+        <h4 class="font-semibold mb-2">£499 bed & mattress</h4>
+        <p class="text-brand-600 font-bold text-2xl mb-1">£16/week</p>
+        <p class="text-sm text-slate-600 mb-1">Example over 36 weeks.</p>
+        <p class="text-xs text-slate-500">Subject to status. Klarna terms apply.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="py-14">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <h3 class="text-3xl font-bold mb-8">Local reviews</h3>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <article class="bg-white rounded-xl shadow p-6 border border-brand-100 transform -rotate-1">
+        <p class="font-semibold mb-2">“Delivered to Oldham in 2 days — spot on.”</p>
+        <p class="text-xs text-slate-600">— Sarah, Oldham</p>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-6 border border-brand-100 transform rotate-1 translate-y-2">
+        <p class="font-semibold mb-2">“Set it up for us, took the old one away. Dead easy.”</p>
+        <p class="text-xs text-slate-600">— Mark, Bolton</p>
+      </article>
+
+      <article class="bg-white rounded-xl shadow p-6 border border-brand-100 transform -rotate-2 -translate-y-1">
+        <p class="font-semibold mb-2">“Best night’s sleep I’ve had since moving to Leeds.”</p>
+        <p class="text-xs text-slate-600">— Aisha, Leeds</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="bg-ink text-cream py-14">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6">
+    <h3 class="text-3xl font-bold mb-6">Why Northern customers choose us</h3>
+
+    <ul class="space-y-3 text-lg">
+      <li class="flex gap-2">
+        <span class="text-brand-300 mt-1">✓</span>
+        <span>Real stock, real delivery times — not “3–5 weeks, maybe”.</span>
+      </li>
+      <li class="flex gap-2">
+        <span class="text-brand-300 mt-1">✓</span>
+        <span>Proper customer service — we pick up the phone.</span>
+      </li>
+      <li class="flex gap-2">
+        <span class="text-brand-300 mt-1">✓</span>
+        <span>Beds chosen for real UK homes, not showrooms.</span>
+      </li>
+      <li class="flex gap-2">
+        <span class="text-brand-300 mt-1">✓</span>
+        <span>Pay‑weekly options that don’t take the mick.</span>
+      </li>
+      <li class="flex gap-2">
+        <span class="text-brand-300 mt-1">✓</span>
+        <span>Trusted across Manchester, Leeds, Bolton & Newcastle.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-cream border-t border-brand-100 py-6">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 gap-4">
+    <h2 class="logo-ynb text-sm sm:text-base font-extrabold select-none">
+      <span class="logo-your">Your</span><span class="logo-next">Next</span><span class="logo-bed">Bed</span><span class="logo-com">.com</span>
+    </h2>
+    <p>Manchester • Leeds • Bolton • Newcastle • Yorkshire</p>
+    <p>&copy; <span id="year"></span> YourNextBed.com Ltd. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
+
